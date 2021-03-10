@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Library</title>
+	<link href="styles.css" rel="stylesheet">
+	<script src="scripts.js"></script>
+</head>
+<body>
+	<section id="addBookSection">
+		<div id="addBookHeader">
+			<h1>New Book</h1>
+			<button value="closed" type="button" id="showFormBtn">+</button>
+		</div>
+		<form action="" id="newBookForm" class="formHidden">
+			<div class="formControl">
+				<label class="ctrLbl" for="title">Title: </label>
+				<input class="ctrInp" type="text" id="title" placeholder="title" required>
+			</div>
+			<div class="formControl">
+				<label class="ctrLbl" for="author">Author: </label>
+				<input class="ctrInp" type="text" id="author" placeholder="author" required>
+			</div>
+			<div class="formControl">
+				<label class="ctrLbl" for="numPages">Number of Pages: </label>
+				<input class="ctrInp ctrInpNum" type="number" id="numPages" placeholder="page number" min="1" required>
+			</div>
+			<div class="formControl">
+				<label class="ctrLbl" for="read">Read?</label>
+				<input type="checkbox" id="read">
+			</div>
+			<div>
+				<button id="addBookBtn" type="submit"> Add Book</button>
+				<span id="infoMsg"></span>
+			</div>
+		</form>
+	</section>
+	<section id="books">
+		<h1>Your Library</h1>
+	</section>
+</body>
+</html>
